@@ -68,6 +68,21 @@ figcaption {
     padding: 5px 0;
 }
 
+.collage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.collage > .img{
+    flex-basis: calc(50% - 2.5px);
+}
+
+.collage > .img:nth-child(1),
+.collage > .img:nth-child(2){
+    margin-bottom: 5px;
+}
+
 
 /** BASE CLASSES */
 
@@ -94,6 +109,7 @@ figcaption {
 .container.image figcaption {
     padding: 5px 10px;
 }
+
 
 
 /*********************************************************************
